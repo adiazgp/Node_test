@@ -1,0 +1,12 @@
+{
+    "cx.server": {
+        "url": "https://claro-co.checkmarx.net/",
+        "alias": "Claro",
+        "username": "capacitacion",
+        "password": "pU2Q2dteSb4aTZC92Q3Was68TUUKHJkb+PO+9fDVkz8=",
+        "project_id": 0,
+        "team_id": 0,
+        "project_name": ""
+    },
+    "cx.folderExclusions": "cvs, .svn, .hg, .git, .bzr, bin, obj, backup, .idea, .vscode, node_modules"
+}
