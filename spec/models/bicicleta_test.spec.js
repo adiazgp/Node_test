@@ -7,7 +7,7 @@ describe('Testing Bicicleta con mongoDB',() => {
    //jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
   })
 
-  beforeEach(function (done) {
+  beforeEach(function () {
     var mongoDB = 'mongodb://localhost/testdb' ;
     mongoose.connect(mongoDB,{useNewUrlParser: true}) ;
     //mongoose.set('strictQuery', false);
@@ -17,7 +17,7 @@ describe('Testing Bicicleta con mongoDB',() => {
     db.on('error', console.error.bind(console, 'MongoDB conection Error:')) ;
     db.once('open', function() {
        console.log('Estamos conectados al test de MongoDB') ;
-       done() ; 
+      // done() ; 
     }) ;
   }) ;  
    
