@@ -10,6 +10,15 @@ var bicicletasRouter = require('./routes/bicicletas');
 var bicicletasAPIRouter = require('./routes/api/bicicletas');
 
 var app = express();
+var mongoose = require('mongoose')
+
+var mongoDB = 'mongodb://localhost/Node_test' ;
+mongoose.connect(mongoDB, { useNewUrlParser: true}) ;
+mongoose.Promise = global.Promise ;
+//mongoose.set('strictQuery', true);
+var db = mongoose.connection ;
+db.on('error', console.error.bind(console, 'MongoDB conection Error:'))
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
